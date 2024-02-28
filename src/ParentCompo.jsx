@@ -6,7 +6,7 @@ class ParentCompo extends Component {
     constructor(){
         super()
 
-        this.componentRef = createRef();
+         this.componentRef = createRef();
     }    
 
     handleChangeCompoName = ()=>{
@@ -16,7 +16,7 @@ class ParentCompo extends Component {
     render(){
         return(
             <div>
-                <PureCompo ref={this.componentRef}/>
+                <PureCompo  ref={this.componentRef}/>
                 <button className="btn btn-info" onClick={this.handleChangeCompoName} >test</button>
             </div>
         )
